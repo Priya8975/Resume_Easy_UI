@@ -72,8 +72,8 @@ interface EntryCardProps {
   entry: ResumeEntry;
   readOnly?: boolean;
   dragHandleProps?: {
-    attributes: Record<string, unknown>;
-    listeners: Record<string, unknown> | undefined;
+    attributes: React.HTMLAttributes<HTMLButtonElement> & Record<string, string | number | boolean | undefined>;
+    listeners: Record<string, Function> | undefined;
   };
 }
 

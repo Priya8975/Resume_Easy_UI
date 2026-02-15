@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plus, X, ChevronDown, ChevronRight, GripVertical } from 'lucide-react';
+import { Plus, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 import {
   DndContext,
