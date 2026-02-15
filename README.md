@@ -2,6 +2,8 @@
 
 A modern, interactive resume builder that lets you create a master resume and generate multiple tailored versions for different job applications. Built with React, TypeScript, and Tailwind CSS.
 
+**Live Demo:** [resume-easy-ui.vercel.app](https://resume-easy-ui.vercel.app)
+
 ## Features
 
 - **Master Resume** - Maintain a single source-of-truth resume with all your experience, projects, skills, and education
