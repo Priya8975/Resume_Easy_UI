@@ -16,7 +16,8 @@ export default function AppShell() {
   const [activeTab, setActiveTab] = useState<Tab>('editor');
 
   const getEffectiveResume = useResumeStore((s) => s.getEffectiveResume);
-  const isReadOnly = useResumeStore((s) => s.activeTailoredConfigId === null);
+  const activeTailoredConfigId = useResumeStore((s) => s.activeTailoredConfigId);
+  const isReadOnly = activeTailoredConfigId === null;
   // Subscribe to underlying state so component re-renders when configs change
   useResumeStore((s) => s.tailoredConfigs);
   useResumeStore((s) => s.masterResume);
@@ -67,7 +68,7 @@ export default function AppShell() {
                 <div className="space-y-4 p-6">
                   <ContactInfoEditor />
                   {sortedSections.map((section) => (
-                    <SectionEditor key={section.id} section={section} readOnly={isReadOnly} />
+                    <SectionEditor key={`${activeTailoredConfigId ?? 'master'}-${section.id}`} section={section} readOnly={isReadOnly} />
                   ))}
                 </div>
               </ScrollArea>
@@ -75,7 +76,7 @@ export default function AppShell() {
 
             {activeTab === 'preview' && (
               <div className="h-full">
-                <LatexPreview />
+                <LatexPreview key={activeTailoredConfigId ?? 'master'} />
               </div>
             )}
 
