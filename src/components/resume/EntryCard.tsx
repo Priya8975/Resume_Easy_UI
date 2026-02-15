@@ -9,6 +9,7 @@ import {
   useSensor,
   useSensors,
   type DragEndEvent,
+  type DraggableAttributes,
 } from '@dnd-kit/core';
 import {
   SortableContext,
@@ -72,8 +73,8 @@ interface EntryCardProps {
   entry: ResumeEntry;
   readOnly?: boolean;
   dragHandleProps?: {
-    attributes: React.HTMLAttributes<HTMLButtonElement> & Record<string, string | number | boolean | undefined>;
-    listeners: Record<string, Function> | undefined;
+    attributes: DraggableAttributes;
+    listeners: ReturnType<typeof useSortable>['listeners'];
   };
 }
 
