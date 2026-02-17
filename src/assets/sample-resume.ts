@@ -82,7 +82,7 @@ export const sampleResume: ResumeData = {
       type: "skills",
       title: "Skills",
       enabled: true,
-      displayOrder: 1,
+      displayOrder: 2,
       entries: [
         {
           id: "skills-1",
@@ -141,7 +141,7 @@ export const sampleResume: ResumeData = {
       type: "experience",
       title: "Professional Experience",
       enabled: true,
-      displayOrder: 2,
+      displayOrder: 1,
       entries: [
         {
           id: "exp-1",
