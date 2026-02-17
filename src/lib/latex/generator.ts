@@ -92,7 +92,7 @@ function generateContactHeader(contact: ContactInfo): string {
   if (contact.phone) parts.push(escapeLatex(contact.phone));
   if (contact.email) parts.push(`\\href{mailto:${contact.email}}{\\underline{${escapeLatex(contact.email)}}}`);
   if (contact.linkedin) parts.push(`\\href{${contact.linkedin}}{\\underline{LinkedIn}}`);
-  if (contact.github) parts.push(`\\href{${contact.github}}{\\underline{Github}}`);
+  if (contact.github) parts.push(`\\href{${contact.github}}{\\underline{GitHub}}`);
   if (contact.location) parts.push(escapeLatex(contact.location));
 
   lines.push(parts.join(' $|$ '));
