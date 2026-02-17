@@ -389,6 +389,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "projects",
             name: "Climate-Driven Insurance Risk Prediction",
+            url: "https://priya8975-climate-risk-insurance.streamlit.app/",
             startDate: "Nov 2025",
             endDate: "Nov 2025",
           },
