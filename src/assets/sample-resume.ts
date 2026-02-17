@@ -91,7 +91,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Programming Languages",
-            items: "Java, C, C++, Python, JavaScript, TypeScript, SQL.",
+            items: "C, C++, Python, JavaScript, TypeScript, SQL.",
             availableItems: "Java, C, C++, Python, JavaScript, TypeScript, SQL",
           },
           bulletPoints: [],
@@ -102,9 +102,9 @@ export const sampleResume: ResumeData = {
           displayOrder: 1,
           data: {
             type: "skills",
-            category: "Frameworks",
-            items: "ReactJS, Spring Boot, Flask, Flutter, React Native, Django, Pandas, PyTorch, TensorFlow, LangChain.",
-            availableItems: "ReactJS, Spring Boot, Flask, Flutter, React Native, Django, Pandas, PyTorch, TensorFlow, LangChain",
+            category: "Frameworks & Libraries",
+            items: "ReactJS, Angular, Svelte, Flask, FastAPI, React Native, Pandas, NumPy, SciPy, scikit-learn, PyTorch, TensorFlow, Hugging Face Transformers, LangChain, LangGraph.",
+            availableItems: "ReactJS, Angular, Svelte, Node.js, Electron, Spring Boot, Flask, FastAPI, Streamlit, Flutter, React Native, Django, JUnit, Pandas, NumPy, SciPy, scikit-learn, PyTorch, TensorFlow, Hugging Face Transformers, LangChain, LangGraph",
           },
           bulletPoints: [],
         },
@@ -115,8 +115,8 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Tools & Technologies",
-            items: "AWS, Azure, GCP, Docker, Kubernetes, Jenkins, Git, OpenAI Whisper.",
-            availableItems: "AWS, Azure, GCP, Docker, Kubernetes, Jenkins, Git, OpenAI Whisper",
+            items: "AWS, Azure, GCP, Docker, Docker Compose, Kubernetes, Jenkins, Git, GitLab, GitHub Actions, ChromaDB, OpenAI Whisper.",
+            availableItems: "AWS, Azure, GCP, Docker, Docker Compose, Kubernetes, Jenkins, Git, GitLab, GitHub Actions, Android Studio, ChromaDB, OpenAI Whisper, SHAP",
           },
           bulletPoints: [],
         },
@@ -157,19 +157,19 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-1-bp-1",
-              text: "Implemented time-series ML models \\textbf{(RNN, LSTM, NARX-ANN)} in \\textbf{PyTorch} for system-state prediction, achieving \\textbf{83\\%} correlation with real laboratory results.",
+              text: "Built a \\textbf{physics-informed ML digital twin} in \\textbf{PyTorch} for DC-DC boost converter parameter estimation, combining \\textbf{neural networks} with \\textbf{ODE-based simulation} to achieve \\textbf{5.19\\% MAPE} on component prediction.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "exp-1-bp-2",
-              text: "Engineered a Python-based ML pipeline using \\textbf{NumPy, SciPy} \\& \\textbf{scikit-learn} for data preprocessing, feature engineering, model training \\& validation, improving model robustness \\& efficiency.",
+              text: "Engineered a data pipeline using \\textbf{SciPy ODE solvers} \\& \\textbf{Latin Hypercube Sampling} to synthesize \\textbf{1,000} labeled waveform samples, and performed \\textbf{observability analysis} that reduced prediction error from \\textbf{23\\%} to \\textbf{5.19\\%}.",
               enabled: true,
               displayOrder: 1,
             },
             {
               id: "exp-1-bp-3",
-              text: "Optimized model stability through hyperparameter tuning, error analysis \\& performance benchmarking.",
+              text: "Benchmarked \\textbf{3 modeling approaches} (PIML, NARX-ANN, feedforward network), with the \\textbf{NARX predictor} achieving \\textbf{R\\textsuperscript{2} = 0.9998} on open-loop waveform prediction.",
               enabled: true,
               displayOrder: 2,
             },
@@ -195,7 +195,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-2-bp-2",
-              text: "Integrated OpenAI APIs with custom prompts to assess code quality, reducing manual review time by 2 hrs/week.",
+              text: "Integrated \\textbf{OpenAI APIs} with \\textbf{custom prompts} to assess code quality, reducing manual review time by \\textbf{2 hrs/week}.",
               enabled: true,
               displayOrder: 1,
             },
@@ -207,7 +207,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-2-bp-4",
-              text: "Accelerated development cycles by \\textbf{25\\%} by integrating GitHub Copilot \\& Amazon CodeWhisperer into the SDLC.",
+              text: "Accelerated development cycles by \\textbf{25\\%} by integrating \\textbf{GitHub Copilot} \\& \\textbf{Amazon CodeWhisperer} into the SDLC.",
               enabled: true,
               displayOrder: 3,
             },
@@ -239,13 +239,13 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-3-bp-3",
-              text: "Deployed \\textbf{Docker} \\& \\textbf{Kubernetes} configurations, ensuring high availability, scalability \\& smooth operations.",
+              text: "Deployed \\textbf{Docker} \\& \\textbf{Kubernetes} configurations, enabling \\textbf{zero-downtime deployments} \\& \\textbf{auto-scaling} across production services.",
               enabled: true,
               displayOrder: 2,
             },
             {
               id: "exp-3-bp-4",
-              text: "Automated reconciliation of \\textbf{2,000+} transaction discrepancies, performed \\textbf{root cause analysis} (RCA) \\& contributed to the full \\textbf{SDLC} (source control management on GitLab, code reviews, unit \\& A/B testing).",
+              text: "Automated reconciliation of \\textbf{2,000+} transaction discrepancies \\& performed \\textbf{root cause analysis (RCA)}.",
               enabled: true,
               displayOrder: 3,
             },
@@ -344,7 +344,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-3-bp-3",
-              text: "Published a research paper titled \\underline{\\href{https://www.ijraset.com/research-paper/iot-based-health-monitoring-system}{\\textbf{\"IoT-Based Health Monitoring System\"}}} in the IJRASET (Vol. 10, Issue XI, ISSN: 2321-9653), detailing the integration of sensors \\& devices for ML driven disease prediction \\& real-time data collection.",
+              text: "Published \\underline{\\href{https://www.ijraset.com/research-paper/iot-based-health-monitoring-system}{\\textbf{\"IoT-Based Health Monitoring System\"}}} in \\textbf{IJRASET}, presenting an IoT sensor framework for \\textbf{ML-driven disease prediction} \\& \\textbf{real-time patient monitoring}.",
               enabled: true,
               displayOrder: 2,
             },
@@ -422,7 +422,7 @@ export const sampleResume: ResumeData = {
       id: "section-achievements",
       type: "achievements",
       title: "Achievements / Extracurriculars",
-      enabled: true,
+      enabled: false,
       displayOrder: 4,
       entries: [
         {
