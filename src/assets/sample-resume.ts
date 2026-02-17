@@ -265,7 +265,7 @@ export const sampleResume: ResumeData = {
         {
           id: "proj-1",
           enabled: true,
-          displayOrder: 0,
+          displayOrder: 1,
           data: {
             type: "projects",
             name: "Audio Transcription for speech impaired",
@@ -289,8 +289,8 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-2",
-          enabled: true,
-          displayOrder: 1,
+          enabled: false,
+          displayOrder: 3,
           data: {
             type: "projects",
             name: "Project Z: Universal Remote Controller",
@@ -352,8 +352,8 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-4",
-          enabled: false,
-          displayOrder: 3,
+          enabled: true,
+          displayOrder: 0,
           data: {
             type: "projects",
             name: "Regulatory Q&A: Multi-Agent Compliance System",
