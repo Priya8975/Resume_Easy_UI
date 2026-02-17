@@ -382,6 +382,37 @@ export const sampleResume: ResumeData = {
             },
           ],
         },
+        {
+          id: "proj-5",
+          enabled: false,
+          displayOrder: 4,
+          data: {
+            type: "projects",
+            name: "Climate-Driven Insurance Risk Prediction",
+            startDate: "Nov 2025",
+            endDate: "Nov 2025",
+          },
+          bulletPoints: [
+            {
+              id: "proj-5-bp-1",
+              text: "Engineered an end-to-end \\textbf{Python} pipeline investigating the U.S. insurance affordability crisis by integrating \\textbf{1.5M+} flood insurance claims across \\textbf{3,200 counties} from \\textbf{OpenFEMA, Census ACS \\& FRED APIs}.",
+              enabled: true,
+              displayOrder: 0,
+            },
+            {
+              id: "proj-5-bp-2",
+              text: "Trained \\textbf{Gamma \\& Tweedie GLMs} for claim severity modeling, \\textbf{SARIMA} for disaster trend forecasting, and \\textbf{Gradient Boosting} for county-level uninsurability classification (\\textbf{AUC-ROC = 0.83} test, \\textbf{0.87 CV}), identifying \\textbf{575 high-risk counties}; applied \\textbf{SHAP} for model explainability.",
+              enabled: true,
+              displayOrder: 1,
+            },
+            {
+              id: "proj-5-bp-3",
+              text: "Validated robustness through \\textbf{16 sensitivity configurations}, \\textbf{10-fold geographic cross-validation}, and \\textbf{7-year expanding-window} temporal validation.",
+              enabled: true,
+              displayOrder: 2,
+            },
+          ],
+        },
       ],
     },
 
