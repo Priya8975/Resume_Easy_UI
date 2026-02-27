@@ -152,9 +152,10 @@ function generateSkills(
   lines.push(`\\begin{rSection}{${title}}`);
   lines.push('');
 
-  for (const entry of entries) {
-    const d = entry.data as SkillsData;
-    lines.push(`\\textbf{${escapeLatex(d.category)}:} ${passthrough(d.items)} \\\\`);
+  for (let i = 0; i < entries.length; i++) {
+    const d = entries[i].data as SkillsData;
+    const trailing = i < entries.length - 1 ? ' \\\\' : '';
+    lines.push(`\\textbf{${escapeLatex(d.category)}:} ${passthrough(d.items)}${trailing}`);
   }
 
   lines.push('');
