@@ -57,13 +57,13 @@ function generateContactPreamble(contact: ContactInfo): string {
   if (contact.phone) parts.push(escapeLatex(contact.phone));
   if (contact.location) parts.push(escapeLatex(contact.location));
   if (contact.email) {
-    parts.push(`{\\color{blue}\\href{mailto:${contact.email}}{${escapeLatex(contact.email)}}}`);
+    parts.push(`\\href{mailto:${contact.email}}{${escapeLatex(contact.email)}}`);
   }
   if (contact.linkedin) {
     const linkedinDisplay = contact.linkedin
       .replace(/^https?:\/\/(www\.)?/, '')
       .replace(/\/$/, '');
-    parts.push(`{\\color{blue}\\href{${contact.linkedin}}{${escapeLatex(linkedinDisplay)}}}`);
+    parts.push(`\\href{${contact.linkedin}}{${escapeLatex(linkedinDisplay)}}`);
   }
 
   if (parts.length > 0) {
@@ -221,7 +221,7 @@ function generateProjects(
 
     const displayName = d.shortName || d.name;
     const nameLatex = d.url
-      ? `\\href{${d.url}}{\\textbf{${escapeLatex(displayName)}}}`
+      ? `{\\color{black}\\href{${d.url}}{\\textbf{${escapeLatex(displayName)}}}}`
       : `\\textbf{${escapeLatex(displayName)}}`;
 
     const techPart = d.techStack ? ` $\\mid$ ${passthrough(d.techStack)}` : '';

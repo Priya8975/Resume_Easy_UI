@@ -30,9 +30,9 @@ export const RESUME_CLS = `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \\usepackage{hyperref}
 \\hypersetup{
     colorlinks=true,
-    linkcolor=black,
-    filecolor=black,
-    urlcolor=black,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
 }
 
 \\pagestyle{empty} % Suppress page numbers
