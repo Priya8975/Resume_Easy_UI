@@ -293,7 +293,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-3-bp-3",
-              text: "Published \\underline{\\href{https://www.ijraset.com/research-paper/iot-based-health-monitoring-system}{\\textbf{\"IoT-Based Health Monitoring System\"}}} in \\textbf{IJRASET}, presenting an IoT sensor framework for \\textbf{ML-driven disease prediction} \\& \\textbf{real-time patient monitoring}.",
+              text: "Published \\underline{{\\hypersetup{urlcolor=black}\\href{https://www.ijraset.com/research-paper/iot-based-health-monitoring-system}{\\textbf{\"IoT-Based Health Monitoring System\"}}}} in \\textbf{IJRASET}, presenting an IoT sensor framework for \\textbf{ML-driven disease prediction} \\& \\textbf{real-time patient monitoring}.",
               enabled: true,
               displayOrder: 2,
             },
