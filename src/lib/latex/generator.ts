@@ -21,6 +21,7 @@ export function generateLatex(
   lines.push('');
   lines.push('\\usepackage[left=0.5 in,top=0.4in,right=0.5 in,bottom=0.4in]{geometry}');
   lines.push('\\usepackage{tabularx}');
+  lines.push('\\usepackage{xcolor}');
   lines.push('\\newcommand{\\tab}[1]{\\hspace{.2667\\textwidth}\\rlap{#1}}');
   lines.push('\\newcommand{\\itab}[1]{\\hspace{0em}\\rlap{#1}}');
 
@@ -56,13 +57,13 @@ function generateContactPreamble(contact: ContactInfo): string {
   if (contact.phone) parts.push(escapeLatex(contact.phone));
   if (contact.location) parts.push(escapeLatex(contact.location));
   if (contact.email) {
-    parts.push(`\\href{mailto:${contact.email}}{${escapeLatex(contact.email)}}`);
+    parts.push(`{\\color{blue}\\href{mailto:${contact.email}}{${escapeLatex(contact.email)}}}`);
   }
   if (contact.linkedin) {
     const linkedinDisplay = contact.linkedin
       .replace(/^https?:\/\/(www\.)?/, '')
       .replace(/\/$/, '');
-    parts.push(`\\href{${contact.linkedin}}{${escapeLatex(linkedinDisplay)}}`);
+    parts.push(`{\\color{blue}\\href{${contact.linkedin}}{${escapeLatex(linkedinDisplay)}}}`);
   }
 
   if (parts.length > 0) {
