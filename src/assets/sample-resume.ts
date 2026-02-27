@@ -275,7 +275,6 @@ export const sampleResume: ResumeData = {
             name: "Smart Health Monitoring System",
             shortName: "VitalWatch",
             techStack: "IOT, React Native, React.js",
-            url: "https://www.ijraset.com/research-paper/iot-based-health-monitoring-system",
             startDate: "Aug 2023",
             endDate: "Jun 2024",
           },
@@ -425,7 +424,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Programming Languages",
-            items: "C, C++, Python, Java, JavaScript, TypeScript, SQL, NoSQL, Go.",
+            items: "C, C++, Python, Java, JavaScript, TypeScript, SQL, NoSQL, Go",
             availableItems: "C, C++, Python, Java, JavaScript, TypeScript, SQL, NoSQL, Go",
           },
           bulletPoints: [],
@@ -437,7 +436,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Technologies/Frameworks",
-            items: "ReactJS, Angular, Svelte, Flask, FastAPI, React Native, Spring Boot, Spring WebFlux, Node.js, Electron, Streamlit, Django, Flutter, Tailwind CSS, LangChain, LangGraph, Kafka, Spark, Hadoop, HTML, CSS, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Docker, Docker Compose, Kubernetes, Linux.",
+            items: "ReactJS, Angular, Svelte, Flask, FastAPI, React Native, Spring Boot, Spring WebFlux, Node.js, Electron, Streamlit, Django, Flutter, Tailwind CSS, LangChain, LangGraph, Kafka, Spark, Hadoop, HTML, CSS, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Docker, Docker Compose, Kubernetes, Linux",
             availableItems: "ReactJS, Angular, Svelte, Flask, FastAPI, React Native, Spring Boot, Spring WebFlux, Node.js, Electron, Streamlit, Django, Flutter, Tailwind CSS, LangChain, LangGraph, Kafka, Spark, Hadoop, HTML, CSS, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Docker, Docker Compose, Kubernetes, Linux",
           },
           bulletPoints: [],
@@ -449,7 +448,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Databases",
-            items: "MySQL, PostgreSQL, MongoDB, Firebase, Firestore, Redis, Neo4j, Pinecone, ChromaDB.",
+            items: "MySQL, PostgreSQL, MongoDB, Firebase, Firestore, Redis, Neo4j, Pinecone, ChromaDB",
             availableItems: "MySQL, PostgreSQL, MongoDB, Firebase, Firestore, Redis, Neo4j, Pinecone, ChromaDB",
           },
           bulletPoints: [],
@@ -461,7 +460,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Tools/Libraries",
-            items: "PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, Pandas, NumPy, SciPy, SHAP, OpenAI Whisper, JUnit, WebSocket, Git, GitLab, GitHub Actions, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ.",
+            items: "PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, Pandas, NumPy, SciPy, SHAP, OpenAI Whisper, JUnit, WebSocket, Git, GitLab, GitHub Actions, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ",
             availableItems: "PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, Pandas, NumPy, SciPy, SHAP, OpenAI Whisper, JUnit, WebSocket, Git, GitLab, GitHub Actions, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ",
           },
           bulletPoints: [],
