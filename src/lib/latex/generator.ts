@@ -221,7 +221,7 @@ function generateProjects(
 
     const displayName = d.shortName || d.name;
     const nameLatex = d.url
-      ? `{\\color{black}\\href{${d.url}}{\\textbf{${escapeLatex(displayName)}}}}`
+      ? `{\\hypersetup{urlcolor=black}\\href{${d.url}}{\\textbf{${escapeLatex(displayName)}}}}`
       : `\\textbf{${escapeLatex(displayName)}}`;
 
     const techPart = d.techStack ? ` $\\mid$ ${passthrough(d.techStack)}` : '';
