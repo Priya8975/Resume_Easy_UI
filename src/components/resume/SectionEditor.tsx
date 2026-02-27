@@ -242,7 +242,9 @@ export default function SectionEditor({ section, readOnly = false }: SectionEdit
           <div className="space-y-3">
             <div className="grid grid-cols-2 gap-3">
               <div className="space-y-1"><label className="text-xs font-medium">Name</label><Input value={d.name} onChange={(e) => update({ name: e.target.value })} placeholder="Project name" /></div>
+              <div className="space-y-1"><label className="text-xs font-medium">Short Name</label><Input value={d.shortName || ''} onChange={(e) => update({ shortName: e.target.value })} placeholder="e.g., RegGuard" /></div>
               <div className="space-y-1"><label className="text-xs font-medium">URL</label><Input value={d.url || ''} onChange={(e) => update({ url: e.target.value })} placeholder="https://..." /></div>
+              <div className="space-y-1"><label className="text-xs font-medium">Tech Stack</label><Input value={d.techStack || ''} onChange={(e) => update({ techStack: e.target.value })} placeholder="React, Node.js, ..." /></div>
               <div className="space-y-1"><label className="text-xs font-medium">Start Date</label><Input value={d.startDate || ''} onChange={(e) => update({ startDate: e.target.value })} placeholder="Jan 2024" /></div>
               <div className="space-y-1"><label className="text-xs font-medium">End Date</label><Input value={d.endDate || ''} onChange={(e) => update({ endDate: e.target.value })} placeholder="Mar 2024" /></div>
             </div>

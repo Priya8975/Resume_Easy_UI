@@ -3,7 +3,7 @@ import { escapeLatex, passthrough } from './escaper';
 
 /**
  * Generates a complete .tex string from resume data.
- * Matches the user's existing Overleaf template format exactly.
+ * Uses the FAANGPath resume.cls template format.
  */
 export function generateLatex(
   resume: ResumeData,
@@ -16,9 +16,20 @@ export function generateLatex(
 
   const lines: string[] = [];
 
-  lines.push(generatePreamble());
-  lines.push(generateContactHeader(resume.contactInfo));
+  // Preamble
+  lines.push('\\documentclass{resume}');
+  lines.push('');
+  lines.push('\\usepackage[left=0.5 in,top=0.4in,right=0.5 in,bottom=0.4in]{geometry}');
+  lines.push('\\usepackage{tabularx}');
+  lines.push('\\newcommand{\\tab}[1]{\\hspace{.2667\\textwidth}\\rlap{#1}}');
+  lines.push('\\newcommand{\\itab}[1]{\\hspace{0em}\\rlap{#1}}');
 
+  // Contact info in preamble (before \begin{document})
+  lines.push(generateContactPreamble(resume.contactInfo));
+  lines.push('');
+  lines.push('\\begin{document}');
+
+  // Sections
   const sortedSections = [...resume.sections]
     .filter(s => isEnabled(s.id, s.enabled))
     .sort((a, b) => a.displayOrder - b.displayOrder);
@@ -37,68 +48,27 @@ export function generateLatex(
   return lines.join('\n');
 }
 
-function generatePreamble(): string {
-  return `\\documentclass[10pt]{article}
-\\usepackage[utf8]{inputenc}
-\\usepackage[T1]{fontenc}
-\\usepackage[margin=0.5in]{geometry}
-\\usepackage{enumitem}
-\\usepackage{hyperref}
-\\usepackage{ragged2e}
-\\usepackage{xcolor}
-\\usepackage{setspace}
-
-\\textheight=10in
-\\pagestyle{empty}
-\\raggedright
-
-\\setlist[itemize]{nosep,left=0pt,labelwidth=0.5em,labelsep=0.3em,itemsep=0pt,parsep=0pt,topsep=0pt}
-
-% DEFINITIONS FOR RESUME
-\\newcommand{\\lineunder} {
-    \\vspace*{-8pt} \\\\
-    \\hspace*{-18pt} \\hrulefill \\\\
-}
-
-\\newcommand{\\header}[1] {
-    {\\hspace*{-18pt}\\vspace*{6pt} \\textsc{#1}}
-    \\vspace*{-6pt} \\lineunder
-}
-
-% Custom commands
-\\newcommand{\\resumeItem}[1]{
-  \\item\\small{
-    {#1 \\vspace{-2pt}}
-  }
-}
-
-% START DOCUMENT
-\\begin{document}
-
-\\vspace*{-40pt}`;
-}
-
-function generateContactHeader(contact: ContactInfo): string {
+function generateContactPreamble(contact: ContactInfo): string {
   const lines: string[] = [];
-  lines.push('');
-  lines.push('%==== Profile ====%');
-  lines.push('\\begin{center}');
-  lines.push(`    {\\Huge \\scshape \\textbf{${escapeLatex(contact.name)}}} \\\\`);
-  lines.push('    \\vspace{3pt}');
-  lines.push('\\medium');
-  lines.push('');
+  lines.push(`\\name{${escapeLatex(contact.name).toUpperCase()}}`);
 
   const parts: string[] = [];
   if (contact.phone) parts.push(escapeLatex(contact.phone));
-  if (contact.email) parts.push(`\\href{mailto:${contact.email}}{\\underline{${escapeLatex(contact.email)}}}`);
-  if (contact.linkedin) parts.push(`\\href{${contact.linkedin}}{\\underline{LinkedIn}}`);
-  if (contact.github) parts.push(`\\href{${contact.github}}{\\underline{GitHub}}`);
   if (contact.location) parts.push(escapeLatex(contact.location));
+  if (contact.email) {
+    parts.push(`\\href{mailto:${contact.email}}{${escapeLatex(contact.email)}}`);
+  }
+  if (contact.linkedin) {
+    const linkedinDisplay = contact.linkedin
+      .replace(/^https?:\/\/(www\.)?/, '')
+      .replace(/\/$/, '');
+    parts.push(`\\href{${contact.linkedin}}{${escapeLatex(linkedinDisplay)}}`);
+  }
 
-  lines.push(parts.join(' $|$ '));
-  lines.push('');
-  lines.push('');
-  lines.push('\\end{center}');
+  if (parts.length > 0) {
+    lines.push(`  \\address{${parts.join(' $\\mid$ ')}}`);
+  }
+
   return lines.join('\n');
 }
 
@@ -143,27 +113,33 @@ function generateEducation(
   isEnabled: (id: string, def: boolean) => boolean
 ): string {
   const lines: string[] = [];
-  lines.push(`%==== ${title.toUpperCase()} ====%`);
-  lines.push(`\\header{\\textbf{${title.toUpperCase()}}}`);
-  lines.push('\\vspace{3pt}');
+  lines.push('\\vspace{-0.2em}');
+  lines.push('');
+  lines.push(`\\begin{rSection}{${title}}`);
 
   for (let i = 0; i < entries.length; i++) {
     const entry = entries[i];
     const d = entry.data as EducationData;
-    lines.push(`\\textbf{${escapeLatex(d.institution)}}${d.location ? `, ${escapeLatex(d.location)}` : ''} \\hfill ${escapeLatex(d.startDate)} -- ${escapeLatex(d.endDate)} \\\\`);
-    lines.push(`${escapeLatex(d.degree)} in ${escapeLatex(d.field)}${d.gpa ? ` \\hfill GPA : ${escapeLatex(d.gpa)}` : ''} \\\\`);
+
+    const institutionPart = d.location
+      ? `${escapeLatex(d.institution)}, ${escapeLatex(d.location)}`
+      : escapeLatex(d.institution);
+    lines.push(`\\textbf {${institutionPart}}  \\hfill {\\bf ${escapeLatex(d.startDate)} - ${escapeLatex(d.endDate)}}\\\\`);
+    lines.push(` {\\bf ${escapeLatex(d.degree)} in ${escapeLatex(d.field)}}  \\hfill \\\\`);
 
     const bullets = getEnabledBullets(entry, isEnabled);
     for (const b of bullets) {
-      lines.push(`${passthrough(b.text)} \\\\`);
+      lines.push(`${passthrough(b.text)}`);
     }
 
     if (i < entries.length - 1) {
-      lines.push('\\vspace{6pt}');
+      lines.push('');
+      lines.push('\\vspace{-0.2em}');
     }
   }
 
-  lines.push('\\vspace{5pt}');
+  lines.push('');
+  lines.push('\\end{rSection}');
   return lines.join('\n');
 }
 
@@ -172,16 +148,16 @@ function generateSkills(
   entries: ResumeEntry[]
 ): string {
   const lines: string[] = [];
-  lines.push(`%==== ${title.toUpperCase()} ====%`);
-  lines.push(`\\header{\\textbf{${title.toUpperCase()}}}`);
-  lines.push('\\vspace{3pt}');
+  lines.push(`\\begin{rSection}{${title}}`);
+  lines.push('');
 
   for (const entry of entries) {
     const d = entry.data as SkillsData;
-    lines.push(`\\textbf{${escapeLatex(d.category)}:} ${passthrough(d.items)}\\\\`);
+    lines.push(`\\textbf{${escapeLatex(d.category)}:} ${passthrough(d.items)} \\\\`);
   }
 
-  lines.push('\\vspace{6pt}');
+  lines.push('');
+  lines.push('\\end{rSection}');
   return lines.join('\n');
 }
 
@@ -191,32 +167,40 @@ function generateExperience(
   isEnabled: (id: string, def: boolean) => boolean
 ): string {
   const lines: string[] = [];
-  lines.push(`%==== ${title.toUpperCase()} ====%`);
-  lines.push(`\\header{\\textbf{${title.toUpperCase()}}}`);
-  lines.push('\\vspace{3pt}');
+  lines.push('\\vspace{-0.2em}');
+  lines.push('\\vspace{-0.2em}');
   lines.push('');
+  lines.push(`\\begin{rSection}{${title}}`);
 
   for (let i = 0; i < entries.length; i++) {
     const entry = entries[i];
     const d = entry.data as ExperienceData;
-    lines.push(`\\textbf{${escapeLatex(d.company)}: ${escapeLatex(d.title)}} \\hfill ${escapeLatex(d.startDate)} -- ${escapeLatex(d.endDate)} \\\\`);
+
+    lines.push('');
+    lines.push(`\\textbf{${escapeLatex(d.company)}} \\hfill ${escapeLatex(d.startDate)} - ${escapeLatex(d.endDate)}\\\\`);
+    const locationPart = d.location ? `\\textit{${escapeLatex(d.location)}}` : '';
+    lines.push(`${escapeLatex(d.title)} \\hfill ${locationPart}`);
 
     const bullets = getEnabledBullets(entry, isEnabled);
     if (bullets.length > 0) {
-      lines.push('\\begin{itemize}');
+      lines.push('');
+      lines.push('\\vspace{-0.1em}');
+      lines.push(' \\begin{itemize}');
+      lines.push('   \\itemsep -4pt {} ');
       for (const b of bullets) {
-        lines.push(`    \\item ${passthrough(b.text)}`);
+        lines.push(`     \\item ${passthrough(b.text)}`);
       }
-      lines.push('\\end{itemize}');
+      lines.push(' \\end{itemize}');
     }
 
     if (i < entries.length - 1) {
-      lines.push('\\vspace{2pt}');
+      lines.push(' ');
+      lines.push('\\vspace{-0.1em}');
     }
   }
 
   lines.push('');
-  lines.push('\\vspace{5pt}');
+  lines.push('\\end{rSection}');
   return lines.join('\n');
 }
 
@@ -226,40 +210,35 @@ function generateProjects(
   isEnabled: (id: string, def: boolean) => boolean
 ): string {
   const lines: string[] = [];
-  lines.push(`%==== ${title.toUpperCase()} ====%`);
-  lines.push(`\\header{\\textbf{${title.toUpperCase()}}}`);
-  lines.push('\\vspace{3pt}');
+  lines.push('\\vspace{-0.2em}');
+  lines.push('');
+  lines.push(`\\begin{rSection}{${title}}`);
+  lines.push('');
 
   for (const entry of entries) {
     const d = entry.data as ProjectData;
-    let dateStr: string;
-    if (d.startDate && d.endDate) {
-      dateStr = d.startDate === d.endDate
-        ? escapeLatex(d.startDate)
-        : `${escapeLatex(d.startDate)} -- ${escapeLatex(d.endDate)}`;
-    } else if (d.startDate) {
-      dateStr = escapeLatex(d.startDate);
-    } else if (d.endDate) {
-      dateStr = escapeLatex(d.endDate);
-    } else {
-      dateStr = '';
-    }
+
+    const displayName = d.shortName || d.name;
     const nameLatex = d.url
-      ? `\\href{${d.url}}{\\textbf{${escapeLatex(d.name)}}}`
-      : `\\textbf{${escapeLatex(d.name)}}`;
-    lines.push(`${nameLatex} \\hfill ${dateStr} \\\\`);
+      ? `\\href{${d.url}}{\\textbf{${escapeLatex(displayName)}}}`
+      : `\\textbf{${escapeLatex(displayName)}}`;
+
+    const techPart = d.techStack ? ` $\\mid$ ${passthrough(d.techStack)}` : '';
+    lines.push(`${nameLatex}${techPart}`);
 
     const bullets = getEnabledBullets(entry, isEnabled);
     if (bullets.length > 0) {
-      lines.push('\\begin{itemize}');
+      lines.push('\\vspace{-0.4em}');
+      lines.push('\\begin{itemize}\\itemsep -4pt');
       for (const b of bullets) {
         lines.push(`    \\item ${passthrough(b.text)}`);
       }
       lines.push('\\end{itemize}');
     }
+    lines.push('');
   }
 
-  lines.push('\\vspace{6pt}');
+  lines.push('\\end{rSection}');
   return lines.join('\n');
 }
 
@@ -269,10 +248,9 @@ function generateAchievements(
   isEnabled: (id: string, def: boolean) => boolean
 ): string {
   const lines: string[] = [];
-  lines.push(`%==== ${title.toUpperCase()} ====%`);
-  lines.push(`\\header{\\textbf{${title.toUpperCase()}}}`);
-  lines.push('\\vspace{4pt}');
-  lines.push('\\begin{itemize}');
+  lines.push(`\\begin{rSection}{${title}}`);
+  lines.push('');
+  lines.push('\\begin{itemize} \\itemsep -4pt');
 
   for (const entry of entries) {
     const bullets = getEnabledBullets(entry, isEnabled);
@@ -289,5 +267,7 @@ function generateAchievements(
   }
 
   lines.push('\\end{itemize}');
+  lines.push('');
+  lines.push('\\end{rSection}');
   return lines.join('\n');
 }

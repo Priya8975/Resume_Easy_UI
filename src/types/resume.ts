@@ -84,6 +84,8 @@ export interface ExperienceData {
 export interface ProjectData {
   type: "projects";
   name: string;
+  shortName?: string;
+  techStack?: string;
   url?: string;
   startDate?: string;
   endDate?: string;

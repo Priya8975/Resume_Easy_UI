@@ -1,3 +1,5 @@
+import { RESUME_CLS } from './resumeCls';
+
 export interface LatexCompilationResult {
   success: boolean;
   pdfBlob?: Blob;
@@ -33,6 +35,10 @@ async function compileViaLatexOnHttp(
         {
           main: true,
           content: texContent,
+        },
+        {
+          path: 'resume.cls',
+          content: RESUME_CLS,
         },
       ],
     }),

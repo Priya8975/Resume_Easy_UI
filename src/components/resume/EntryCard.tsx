@@ -178,6 +178,7 @@ export default function EntryCard({ sectionId, entry, readOnly = false, dragHand
       }
       case 'projects': {
         const d = data as ProjectData;
+        const displayName = d.shortName ? `${d.shortName} (${d.name})` : d.name;
         return (
           <div className="flex-1 min-w-0">
             <p className="font-medium text-sm truncate">
@@ -190,18 +191,14 @@ export default function EntryCard({ sectionId, entry, readOnly = false, dragHand
                     window.open(d.url, '_blank', 'noopener,noreferrer');
                   }}
                 >
-                  {d.name}
+                  {displayName}
                 </button>
               ) : (
-                d.name
+                displayName
               )}
             </p>
-            {(d.startDate || d.endDate) && (
-              <p className="text-xs text-muted-foreground">
-                {d.startDate}
-                {d.startDate && d.endDate ? ' - ' : ''}
-                {d.endDate}
-              </p>
+            {d.techStack && (
+              <p className="text-xs text-muted-foreground truncate">{d.techStack}</p>
             )}
           </div>
         );
@@ -302,8 +299,16 @@ export default function EntryCard({ sectionId, entry, readOnly = false, dragHand
               <Input value={d.name} onChange={(e) => update({ name: e.target.value })} />
             </div>
             <div className="space-y-1">
+              <label className="text-xs font-medium">Short Name</label>
+              <Input value={d.shortName || ''} onChange={(e) => update({ shortName: e.target.value })} placeholder="e.g., RegGuard" />
+            </div>
+            <div className="space-y-1">
               <label className="text-xs font-medium">URL</label>
               <Input value={d.url || ''} onChange={(e) => update({ url: e.target.value })} />
+            </div>
+            <div className="space-y-1">
+              <label className="text-xs font-medium">Tech Stack</label>
+              <Input value={d.techStack || ''} onChange={(e) => update({ techStack: e.target.value })} placeholder="React, Node.js, ..." />
             </div>
             <div className="space-y-1">
               <label className="text-xs font-medium">Start Date</label>
