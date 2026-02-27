@@ -58,14 +58,21 @@ function SortableCheckboxItem({ id, label, onUncheck }: { id: string; label: str
   );
 }
 
-const COURSEWORK_PREFIX = '\\textbf{Coursework:} ';
+const COURSEWORK_PREFIX = 'Coursework: ';
+const COURSEWORK_PREFIX_BOLD = '\\textbf{Coursework:} ';
 
 function stripCourseworkPrefix(text: string): string {
-  return text.startsWith(COURSEWORK_PREFIX) ? text.slice(COURSEWORK_PREFIX.length) : text;
+  if (text.startsWith(COURSEWORK_PREFIX_BOLD)) return text.slice(COURSEWORK_PREFIX_BOLD.length);
+  if (text.startsWith(COURSEWORK_PREFIX)) return text.slice(COURSEWORK_PREFIX.length);
+  return text;
 }
 
 function addCourseworkPrefix(text: string): string {
   return COURSEWORK_PREFIX + text;
+}
+
+function isCourseworkBullet(text: string): boolean {
+  return text.startsWith(COURSEWORK_PREFIX) || text.startsWith(COURSEWORK_PREFIX_BOLD);
 }
 
 interface EntryCardProps {
@@ -94,7 +101,7 @@ export default function EntryCard({ sectionId, entry, readOnly = false, dragHand
 
   const sortedBullets = [...entry.bulletPoints].sort((a, b) => a.displayOrder - b.displayOrder);
   const courseworkBullet = entry.data.type === 'education'
-    ? sortedBullets.find((b) => b.text.startsWith(COURSEWORK_PREFIX))
+    ? sortedBullets.find((b) => isCourseworkBullet(b.text))
     : null;
   const nonCourseworkBullets = courseworkBullet
     ? sortedBullets.filter((b) => b.id !== courseworkBullet.id)
