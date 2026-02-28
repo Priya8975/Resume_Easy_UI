@@ -42,7 +42,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "edu-1-bp-1",
-              text: "Coursework: Distributed Systems, Machine Learning, Computer Vision, Deep Learning, Networking Algorithms, NLP, Digital Image Processing, Switching and Routing in Parallel Systems, Cyber Physical Systems",
+              text: "Coursework: Distributed Systems, Machine Learning, Computer Vision, NLP, Deep Learning, Networking Algorithms",
               enabled: true,
               displayOrder: 0,
             },
