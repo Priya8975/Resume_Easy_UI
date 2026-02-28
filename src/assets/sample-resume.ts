@@ -350,7 +350,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-2-bp-1",
-              text: "Built an Android app in \\textbf{Java} to remotely control PC mouse/keyboard via touch gestures with a \\textbf{JSON command protocol}, achieving under 50ms response latency.",
+              text: "Built an Android app in \\textbf{Java} to remotely control PC mouse/keyboard via touch gestures with a \\textbf{JSON} command protocol, achieving under 50ms response latency.",
               enabled: true,
               displayOrder: 0,
             },
