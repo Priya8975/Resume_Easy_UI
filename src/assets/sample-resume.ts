@@ -304,7 +304,7 @@ export const sampleResume: ResumeData = {
             type: "projects",
             name: "Smart Health Monitoring System",
             shortName: "VitalWatch",
-            techStack: "IOT, React Native, React.js",
+            techStack: "React Native, React.js, Flask, Firebase, MQTT",
             startDate: "Aug 2023",
             endDate: "Jun 2024",
           },
