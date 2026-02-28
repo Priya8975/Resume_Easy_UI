@@ -212,25 +212,25 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-3-bp-1",
-              text: "Developed \\textbf{backend} systems using \\textbf{Python/Flask} \\& \\textbf{frontend PWAs} with \\textbf{Angular/Svelte}, serving \\textbf{1M} users.",
+              text: "Engineered \\textbf{Flask} backend services and \\textbf{Angular} PWAs for a B2B rural commerce platform, serving 1M+ customers.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "exp-3-bp-2",
-              text: "Built a recommendation engine using \\textbf{correlation analysis} \\& \\textbf{clustering}, and a \\textbf{Random Forest Classifier} to evaluate customer credit history \\& assign credit scores, which improved the speed of creditworthiness evaluation by \\textbf{18\\%}.",
+              text: "Developed a \\textbf{Random Forest} Classifier for customer credit scoring, reducing creditworthiness evaluation time by 25\\%.",
               enabled: true,
               displayOrder: 1,
             },
             {
               id: "exp-3-bp-3",
-              text: "Deployed \\textbf{Docker} \\& \\textbf{Kubernetes} configurations, enabling \\textbf{zero-downtime deployments} \\& \\textbf{auto-scaling} across production services.",
+              text: "Built a \\textbf{Recommendation Engine} using correlation analysis and clustering, increasing product discovery by 30\\%.",
               enabled: true,
               displayOrder: 2,
             },
             {
               id: "exp-3-bp-4",
-              text: "Automated reconciliation of \\textbf{2,000+} transaction discrepancies \\& performed \\textbf{root cause analysis (RCA)}.",
+              text: "Deployed \\textbf{Docker} and \\textbf{Kubernetes} pipelines to enable zero-downtime deployments, cutting release cycle time by 40\\%.",
               enabled: true,
               displayOrder: 3,
             },
