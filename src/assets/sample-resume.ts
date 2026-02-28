@@ -66,7 +66,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "edu-2-bp-1",
-              text: "Coursework: Algorithms, Database Systems, Operating Systems, Cloud Computing, Data Science, Big Data, Linux, AI, DSA, Systems Programming, OS, DBMS, High Performance Computing, Web Designing, Computer Graphics, Data Structures, Operating Systems, Systems Programming, Database Management Systems, Android Dev, AI, Big Data Analytics",
+              text: "Coursework: Data Structures and Algorithms, Database Systems, Operating Systems, Cloud Computing, Data Science, Big Data",
               enabled: true,
               displayOrder: 0,
             },
