@@ -277,7 +277,7 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-1",
-          enabled: false,
+          enabled: true,
           displayOrder: 1,
           data: {
             type: "projects",
@@ -290,15 +290,9 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-1-bp-1",
-              text: "Fine-tuned \\textbf{OpenAI Whisper} using \\textbf{PyTorch} \\& \\textbf{Hugging Face Transformers} to improve speech-to-text for people with Dysarthria, creating both general \\& user-specific models.",
+              text: "Fine-tuned \\textbf{OpenAI Whisper} with \\textbf{PyTorch} and \\textbf{Hugging Face Transformers} for dysarthric speech recognition, reducing Word Error Rate by 50\\% (general) and 80\\% (personalized models).",
               enabled: true,
               displayOrder: 0,
-            },
-            {
-              id: "proj-1-bp-2",
-              text: "Improved Word Error Rate (WER) by \\textbf{50\\%} with general models \\& up to \\textbf{80\\%} with user-specific models.",
-              enabled: true,
-              displayOrder: 1,
             },
           ],
         },
