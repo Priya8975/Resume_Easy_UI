@@ -249,7 +249,7 @@ export const sampleResume: ResumeData = {
             type: "projects",
             name: "Regulatory Q&A: Multi-Agent Compliance System",
             shortName: "RegGuard",
-            techStack: "LangGraph, LangChain, GPT-4o, ChromaDB, React, FastAPI",
+            techStack: "LangGraph, LangChain, GPT-4o, ChromaDB, React, FastAPI, Docker, LangSmith",
             url: "https://github.com/Priya8975/regulatory-qa",
             startDate: "Jan 2026",
             endDate: "Jan 2026",
