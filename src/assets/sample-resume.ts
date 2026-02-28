@@ -269,7 +269,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-4-bp-3",
-              text: "Engineered a \\textbf{ChromaDB}-backed hallucination-detection agent with confidence-based auto-retry, achieving 92\\% accuracy.",
+              text: "Engineered a ChromaDB-backed hallucination-detection agent with confidence-based auto-retry, achieving 92\\% accuracy.",
               enabled: true,
               displayOrder: 2,
             },
