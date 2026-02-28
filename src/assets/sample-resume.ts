@@ -137,7 +137,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-2-bp-2",
-              text: "Designed distributed \\textbf{microservices} with \\textbf{REST} APIs and an \\textbf{API gateway} for repo ingestion, scan orchestration and vulnerability reporting, achieving 95\\%+ test coverage across all services.",
+              text: "Designed distributed \\textbf{microservices} with REST APIs and an API gateway for repo ingestion, scan orchestration and vulnerability reporting, achieving 95\\%+ test coverage across all services.",
               enabled: true,
               displayOrder: 1,
             },
