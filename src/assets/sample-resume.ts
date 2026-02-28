@@ -61,12 +61,12 @@ export const sampleResume: ResumeData = {
             endDate: "May 2023",
             gpa: "3.8/4.0",
             location: "India",
-            availableCoursework: "DSA, Systems Programming \\& OS, DBMS, Linux, Cloud Computing, NLP, High Performance Computing, Web Designing, Computer Graphics, Data Structures, Operating Systems, Systems Programming, Database Management Systems, Android Dev, AI, Natural Language Processing, Data Science, Big Data Analytics, Algorithms",
+            availableCoursework: "Data Structures and Algorithms, Database Systems, Operating Systems, Cloud Computing, Big Data Analytics, DSA, Algorithms, Linux, Systems Programming, OS, DBMS, High Performance Computing, Web Designing, Computer Graphics, Database Management Systems, Android Dev, AI, Big Data, Data Science",
           },
           bulletPoints: [
             {
               id: "edu-2-bp-1",
-              text: "Coursework: Data Structures and Algorithms, Database Systems, Operating Systems, Cloud Computing, Data Science, Big Data",
+              text: "Coursework: Data Structures and Algorithms, Database Systems, Operating Systems, Cloud Computing, Big Data Analytics",
               enabled: true,
               displayOrder: 0,
             },
