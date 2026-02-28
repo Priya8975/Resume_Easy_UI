@@ -390,7 +390,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-5-bp-3",
-              text: "Trained a \\textbf{scikit-learn Gradient Boosting classifier} for county-level uninsurability risk, identifying 575 high-risk counties with AUC-ROC = 0.83.",
+              text: "Trained a \\textbf{scikit-learn} Gradient Boosting classifier for county-level uninsurability risk, identifying 575 high-risk counties with AUC-ROC = 0.83.",
               enabled: true,
               displayOrder: 2,
             },
