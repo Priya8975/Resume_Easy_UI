@@ -264,13 +264,13 @@ export const sampleResume: ResumeData = {
             {
               id: "proj-4-bp-2",
               text: "Engineered a hallucination-detection agent that validates every LLM response against source documents, auto-retrying below 0.7 confidence threshold, achieving 92\\% factual accuracy.",
-              enabled: true,
+              enabled: false,
               displayOrder: 1,
             },
             {
               id: "proj-4-bp-3",
               text: "Engineered a ChromaDB-backed hallucination-detection agent with confidence-based auto-retry, achieving 92\\% accuracy.",
-              enabled: false,
+              enabled: true,
               displayOrder: 2,
             },
           ],
