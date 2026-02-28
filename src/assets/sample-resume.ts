@@ -37,12 +37,12 @@ export const sampleResume: ResumeData = {
             endDate: "May 2026",
             gpa: "3.9/4.0",
             location: "New York",
-            availableCoursework: "Machine Learning, Deep Learning, Computer Vision, Digital Image Processing, Networking Algorithms, Switching and Routing in Parallel Systems, Distributed Systems, Cyber Physical Systems, NLP",
+            availableCoursework: "Distributed Systems, Machine Learning, Computer Vision, Natural Language Processing, Deep Learning, NLP, Networking Algorithms, Digital Image Processing, Switching and Routing in Parallel Systems, Cyber Physical Systems",
           },
           bulletPoints: [
             {
               id: "edu-1-bp-1",
-              text: "Coursework: Distributed Systems, Machine Learning, Computer Vision, NLP, Deep Learning, Networking Algorithms",
+              text: "Coursework: Distributed Systems, Machine Learning, Computer Vision, Natural Language Processing",
               enabled: true,
               displayOrder: 0,
             },
