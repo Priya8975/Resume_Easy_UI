@@ -311,21 +311,27 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-3-bp-1",
-              text: "Engineered a real-time health monitoring system utilizing \\textbf{IoT} sensors to capture patient data, achieving a \\textbf{15\\%} improvement in early disease prediction accuracy via machine learning models.",
+              text: "Built a real-time health monitoring system using \\textbf{Flask} and \\textbf{React Native} with ML-driven disease prediction, improving early detection accuracy by 15\\%.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "proj-3-bp-2",
-              text: "Designed a \\textbf{React Native} mobile application enabling patients to view real-time vitals \\& built a \\textbf{React.js} web portal for doctors to monitor patient health metrics \\& manage profiles.",
-              enabled: true,
+              text: "Engineered a real-time health monitoring system utilizing \\textbf{IoT} sensors to capture patient data, achieving a \\textbf{15\\%} improvement in early disease prediction accuracy via machine learning models.",
+              enabled: false,
               displayOrder: 1,
             },
             {
               id: "proj-3-bp-3",
-              text: "Published \\underline{{\\hypersetup{urlcolor=black}\\href{https://www.ijraset.com/research-paper/iot-based-health-monitoring-system}{\\textbf{``IoT-Based Health Monitoring System''}}}} in \\textbf{IJRASET}, presenting an IoT sensor framework for \\textbf{ML-driven disease prediction} \\& \\textbf{real-time patient monitoring}.",
-              enabled: true,
+              text: "Designed a \\textbf{React Native} mobile application enabling patients to view real-time vitals \\& built a \\textbf{React.js} web portal for doctors to monitor patient health metrics \\& manage profiles.",
+              enabled: false,
               displayOrder: 2,
+            },
+            {
+              id: "proj-3-bp-4",
+              text: "Published \\underline{{\\hypersetup{urlcolor=black}\\href{https://www.ijraset.com/research-paper/iot-based-health-monitoring-system}{\\textbf{``IoT-Based Health Monitoring System''}}}} in \\textbf{IJRASET}, presenting an IoT sensor framework for \\textbf{ML-driven disease prediction} \\& \\textbf{real-time patient monitoring}.",
+              enabled: false,
+              displayOrder: 3,
             },
           ],
         },
