@@ -350,21 +350,15 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-2-bp-1",
-              text: "Built an Android app using \\textbf{Java (Android Studio)} to remotely control a PC's mouse/keyboard via touch gestures, ensuring seamless cross-device interaction.",
+              text: "Built an Android app in \\textbf{Java} to remotely control PC mouse/keyboard via touch gestures with a \\textbf{JSON command protocol}, achieving under 50ms response latency.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "proj-2-bp-2",
-              text: "Designed a lightweight \\textbf{JSON} command protocol with retry/backoff \\& Boosted reliability with \\textbf{JUnit} tests.",
+              text: "Developed a cross-platform \\textbf{Node.js} and \\textbf{Electron} controller with FTP sharing, reducing connection failures by 40\\%.",
               enabled: true,
               displayOrder: 1,
-            },
-            {
-              id: "proj-2-bp-3",
-              text: "Developed a cross-platform controller using \\textbf{NodeJS} \\& \\textbf{Electron} with a command server \\& FTP for file sharing.",
-              enabled: true,
-              displayOrder: 2,
             },
           ],
         },
