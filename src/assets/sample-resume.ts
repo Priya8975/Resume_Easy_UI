@@ -98,21 +98,15 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-1-bp-1",
-              text: "Built a \\textbf{physics-informed ML digital twin} in \\textbf{PyTorch} for DC-DC boost converter parameter estimation, combining \\textbf{neural networks} with \\textbf{ODE-based simulation} to achieve \\textbf{5.19\\% MAPE} on component prediction.",
+              text: "Engineered a \\textbf{PyTorch} and \\textbf{SciPy} data pipeline to synthesize 1,000+ samples, cutting data preparation time by 60\\%.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "exp-1-bp-2",
-              text: "Engineered a data pipeline using \\textbf{SciPy ODE solvers} \\& \\textbf{Latin Hypercube Sampling} to synthesize \\textbf{1,000} labeled waveform samples, and performed \\textbf{observability analysis} that reduced prediction error from \\textbf{23\\%} to \\textbf{5.19\\%}.",
+              text: "Developed a \\textbf{PyTorch} ML model for circuit behavior prediction, reducing estimation error from 23\\% to 5.19\\%.",
               enabled: true,
               displayOrder: 1,
-            },
-            {
-              id: "exp-1-bp-3",
-              text: "Benchmarked \\textbf{3 modeling approaches} (PIML, NARX-ANN, feedforward network), with the \\textbf{NARX predictor} achieving \\textbf{R\\textsuperscript{2} = 0.9998} on open-loop waveform prediction.",
-              enabled: true,
-              displayOrder: 2,
             },
           ],
         },
