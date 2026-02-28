@@ -430,26 +430,26 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-6-bp-1",
-              text: "Engineered a fault-tolerant webhook delivery platform in \\textbf{Go} that fans out events to \\textbf{1,000+} subscriber endpoints with \\textbf{at-least-once delivery guarantees}, \\textbf{exponential backoff retries} (5 attempts), and a \\textbf{dead letter queue} for permanent failures.",
+              text: "Designed and built a fault-tolerant \\textbf{Go} webhook delivery platform with a 100-goroutine worker pool and \\textbf{Redis} sorted-set job queues, achieving 95 deliveries/sec and 100\\% success rate across 3,000 webhooks.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "proj-6-bp-2",
-              text: "Implemented per-subscriber \\textbf{circuit breakers} (closed \\textrightarrow{} open \\textrightarrow{} half-open) and a \\textbf{sliding-window rate limiter} using atomic \\textbf{Redis Lua scripts}, preventing cascading failures across distributed endpoints.",
+              text: "Engineered per-subscriber \\textbf{circuit breakers} and Redis sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
               enabled: true,
               displayOrder: 1,
             },
             {
               id: "proj-6-bp-3",
-              text: "Achieved \\textbf{\\~{}95 deliveries/sec} throughput via a \\textbf{100-goroutine worker pool} backed by \\textbf{Redis sorted-set job queues} and buffered channels, delivering \\textbf{3,000 webhooks} at \\textbf{100\\%} success rate in load testing.",
+              text: "Developed a \\textbf{React + WebSocket} real-time monitoring dashboard with live delivery metrics, validated by 26 tests using Go's race detector in a \\textbf{GitHub Actions CI} pipeline.",
               enabled: true,
               displayOrder: 2,
             },
             {
               id: "proj-6-bp-4",
-              text: "Developed a real-time \\textbf{React + Tailwind} monitoring dashboard with \\textbf{WebSocket} live feed for delivery metrics and subscriber health; validated reliability with \\textbf{26 tests} using \\textbf{Go's race detector} in a \\textbf{GitHub Actions CI} pipeline.",
-              enabled: true,
+              text: "Engineered a fault-tolerant webhook delivery platform in \\textbf{Go} that fans out events to \\textbf{1,000+} subscriber endpoints with \\textbf{at-least-once delivery guarantees}, \\textbf{exponential backoff retries} (5 attempts), and a \\textbf{dead letter queue} for permanent failures.",
+              enabled: false,
               displayOrder: 3,
             },
           ],
