@@ -244,7 +244,7 @@ export const sampleResume: ResumeData = {
         {
           id: "proj-4",
           enabled: true,
-          displayOrder: 0,
+          displayOrder: 1,
           data: {
             type: "projects",
             name: "Regulatory Q&A: Multi-Agent Compliance System",
@@ -277,7 +277,7 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-1",
-          enabled: true,
+          enabled: false,
           displayOrder: 1,
           data: {
             type: "projects",
@@ -416,8 +416,8 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-6",
-          enabled: false,
-          displayOrder: 5,
+          enabled: true,
+          displayOrder: 0,
           data: {
             type: "projects",
             name: "Resilient Webhook Delivery System",
