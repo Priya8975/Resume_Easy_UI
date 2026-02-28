@@ -257,7 +257,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-4-bp-1",
-              text: "Designed and deployed a \\textbf{LangGraph multi-agent RAG} system using GPT-4o and ChromaDB to answer regulatory compliance questions across 5 financial frameworks, reducing manual research time by 70\\%.",
+              text: "Designed and deployed a \\textbf{LangGraph multi-agent RAG} system using \\textbf{GPT-4o} and \\textbf{ChromaDB} to answer regulatory compliance questions across 5 financial frameworks, reducing manual research time by 70\\%.",
               enabled: true,
               displayOrder: 0,
             },
@@ -269,7 +269,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-4-bp-3",
-              text: "Engineered a ChromaDB-backed hallucination-detection agent with confidence-based auto-retry, achieving 92\\% accuracy.",
+              text: "Engineered a \\textbf{ChromaDB}-backed hallucination-detection agent with confidence-based auto-retry, achieving 92\\% accuracy.",
               enabled: true,
               displayOrder: 2,
             },
@@ -436,7 +436,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-6-bp-2",
-              text: "Engineered per-subscriber \\textbf{circuit breakers} and Redis sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
+              text: "Engineered per-subscriber \\textbf{circuit breakers} and \\textbf{Redis} sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
               enabled: true,
               displayOrder: 1,
             },
