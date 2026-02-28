@@ -277,7 +277,7 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-1",
-          enabled: true,
+          enabled: false,
           displayOrder: 1,
           data: {
             type: "projects",
@@ -304,7 +304,7 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-3",
-          enabled: true,
+          enabled: false,
           displayOrder: 2,
           data: {
             type: "projects",
