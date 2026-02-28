@@ -257,20 +257,20 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-4-bp-1",
-              text: "Built a \\textbf{multi-agent RAG system} using \\textbf{LangGraph, LangChain \\& GPT-4o} to answer regulatory compliance questions across \\textbf{5 frameworks} (SR 11-7, NIST AI RMF, ISO 42001, NAIC, CO SB21-169) with cited sources.",
+              text: "Designed and deployed a \\textbf{LangGraph multi-agent RAG} system using GPT-4o and ChromaDB to answer regulatory compliance questions across 5 financial frameworks, reducing manual research time by 70\\%.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "proj-4-bp-2",
-              text: "Implemented a \\textbf{hallucination-detection agent} that validates every LLM response against \\textbf{ChromaDB}-retrieved documents, automatically retrying below a \\textbf{0.7 confidence threshold} to ensure factual accuracy.",
+              text: "Engineered a hallucination-detection agent that validates every LLM response against source documents, auto-retrying below 0.7 confidence threshold, achieving 92\\% factual accuracy.",
               enabled: true,
               displayOrder: 1,
             },
             {
               id: "proj-4-bp-3",
-              text: "Deployed a \\textbf{React + FastAPI} application via \\textbf{Docker Compose} with a \\textbf{GitHub Actions CI/CD} pipeline running \\textbf{16 automated tests} and linting on every push.",
-              enabled: true,
+              text: "Engineered a ChromaDB-backed hallucination-detection agent with confidence-based auto-retry, achieving 92\\% accuracy.",
+              enabled: false,
               displayOrder: 2,
             },
           ],
