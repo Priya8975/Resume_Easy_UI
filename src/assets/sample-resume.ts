@@ -162,7 +162,7 @@ export const sampleResume: ResumeData = {
             {
               id: "exp-2-bp-7",
               text: "Built an \\textbf{MDC} based async logging utility for multi-threaded scan tracking, increasing audit log coverage by 75\\%.",
-              enabled: true,
+              enabled: false,
               displayOrder: 6,
             },
             {
