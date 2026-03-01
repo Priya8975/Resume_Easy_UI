@@ -483,7 +483,7 @@ export const sampleResume: ResumeData = {
           displayOrder: 1,
           data: {
             type: "skills",
-            category: "Frameworks \\& Libraries",
+            category: "Frameworks/Libraries",
             items: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, Hugging Face Transformers, JUnit, WebSocket",
             availableItems: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, Hugging Face Transformers, JUnit, WebSocket",
           },
@@ -507,7 +507,7 @@ export const sampleResume: ResumeData = {
           displayOrder: 3,
           data: {
             type: "skills",
-            category: "DevOps \\& Tools",
+            category: "DevOps/Tools",
             items: "Docker, Kubernetes, AWS, Azure, GitHub Actions, GitLab CI, Grafana, SHAP, Tailwind, Git, Docker Compose, Kafka, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Linux, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ",
             availableItems: "Docker, Kubernetes, AWS, Azure, GitHub Actions, GitLab CI, Grafana, SHAP, Tailwind, Git, Docker Compose, Kafka, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Linux, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ",
           },
