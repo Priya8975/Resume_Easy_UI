@@ -484,8 +484,8 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Frameworks/Libraries",
-            items: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, Hugging Face Transformers, JUnit, WebSocket",
-            availableItems: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, Hugging Face Transformers, JUnit, WebSocket",
+            items: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, JUnit, WebSocket",
+            availableItems: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, JUnit, WebSocket",
           },
           bulletPoints: [],
         },
