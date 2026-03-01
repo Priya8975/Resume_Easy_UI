@@ -472,7 +472,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Programming Languages",
-            items: "Python, Go, Java, JavaScript, TypeScript, C++, SQL, HTML, CSS",
+            items: "Python, Go, Java, JavaScript, TypeScript, C++, SQL",
             availableItems: "Python, Go, Java, JavaScript, TypeScript, C++, SQL, HTML, CSS, Bash, C",
           },
           bulletPoints: [],
