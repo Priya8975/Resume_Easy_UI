@@ -454,6 +454,37 @@ export const sampleResume: ResumeData = {
             },
           ],
         },
+        {
+          id: "proj-7",
+          enabled: false,
+          displayOrder: 6,
+          data: {
+            type: "projects",
+            name: "Campus Emergency Alert System",
+            shortName: "CampusAlert",
+            techStack: "Java, Spring Boot, Kafka, GraphQL, React, TypeScript, PostgreSQL, Redis, Docker",
+          },
+          bulletPoints: [
+            {
+              id: "proj-7-bp-1",
+              text: "Designed and built a distributed event-driven \\textbf{Spring Boot} microservices platform with a 3-broker \\textbf{Kafka} cluster, delivering multi-channel alerts to 3,400+ recipients in under 2 seconds.",
+              enabled: true,
+              displayOrder: 0,
+            },
+            {
+              id: "proj-7-bp-2",
+              text: "Engineered a \\textbf{Redis} SETNX deduplication pipeline with geo-radius enrichment and \\textbf{GraphQL} subscriptions, reducing duplicate alerts by 100\\% with 5-minute TTL windows.",
+              enabled: true,
+              displayOrder: 1,
+            },
+            {
+              id: "proj-7-bp-3",
+              text: "Containerized 12 services via \\textbf{Docker Compose} with \\textbf{Prometheus} and \\textbf{Grafana} observability, validated by 29 unit tests in a \\textbf{GitHub Actions} CI/CD pipeline.",
+              enabled: true,
+              displayOrder: 2,
+            },
+          ],
+        },
       ],
     },
 
