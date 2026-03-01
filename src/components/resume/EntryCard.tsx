@@ -34,6 +34,25 @@ import type {
   AchievementData,
 } from '@/types/resume';
 
+/** Split comma-separated items, but keep commas inside parentheses together */
+function splitItems(str: string): string[] {
+  const items: string[] = [];
+  let current = '';
+  let depth = 0;
+  for (const ch of str) {
+    if (ch === '(') depth++;
+    else if (ch === ')') depth--;
+    else if (ch === ',' && depth === 0) {
+      items.push(current.trim());
+      current = '';
+      continue;
+    }
+    current += ch;
+  }
+  if (current.trim()) items.push(current.trim());
+  return items.filter(Boolean);
+}
+
 function SortableCheckboxItem({ id, label, onUncheck }: { id: string; label: string; onUncheck: () => void }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id });
   const style = {
@@ -399,16 +418,13 @@ export default function EntryCard({ sectionId, entry, readOnly = false, dragHand
           // Get the current (effective) courses from the bullet text
           // Strip trailing period from the text before parsing
           const rawText = stripCourseworkPrefix(courseworkBullet.text).replace(/\.\s*$/, '');
-          const currentCourses = rawText
-            .split(',')
-            .map((c) => c.trim())
-            .filter(Boolean);
+          const currentCourses = splitItems(rawText);
           const currentSet = new Set(currentCourses);
 
           // Get the full available course list from availableCoursework field,
           // falling back to the bullet text for entries without it
           const allCourses = eduData.availableCoursework
-            ? eduData.availableCoursework.split(',').map((c) => c.trim()).filter(Boolean)
+            ? splitItems(eduData.availableCoursework)
             : currentCourses;
 
           const uncheckedCourses = allCourses.filter((c) => !currentSet.has(c));
@@ -485,11 +501,11 @@ export default function EntryCard({ sectionId, entry, readOnly = false, dragHand
         {entry.data.type === 'skills' && (() => {
           const skillsData = entry.data as SkillsData;
           const rawItems = skillsData.items.replace(/\.\s*$/, '');
-          const currentItems = rawItems.split(',').map((s) => s.trim()).filter(Boolean);
+          const currentItems = splitItems(rawItems);
           const currentSet = new Set(currentItems);
 
           const allItems = skillsData.availableItems
-            ? skillsData.availableItems.split(',').map((s) => s.trim()).filter(Boolean)
+            ? splitItems(skillsData.availableItems)
             : currentItems;
 
           const uncheckedItems = allItems.filter((s) => !currentSet.has(s));
