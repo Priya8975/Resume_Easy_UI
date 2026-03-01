@@ -174,13 +174,13 @@ export const sampleResume: ResumeData = {
             {
               id: "exp-2-bp-9",
               text: "Devised modular \\textbf{Bash} scripts for air-gapped enterprise repo ingestion, cutting repo setup and scan time by 50\\%.",
-              enabled: true,
+              enabled: false,
               displayOrder: 8,
             },
             {
               id: "exp-2-bp-10",
               text: "Automated nightly scans and SBOM generation for 1000+ repositories via job scheduler, delivering daily health digests.",
-              enabled: true,
+              enabled: false,
               displayOrder: 9,
             },
             {
