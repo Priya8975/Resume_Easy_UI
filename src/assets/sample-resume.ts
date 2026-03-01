@@ -472,8 +472,8 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Programming Languages",
-            items: "Python, Go, Java, JavaScript, Bash, C, C++, TypeScript, SQL, HTML, CSS",
-            availableItems: "Python, Go, Java, JavaScript, Bash, C, C++, TypeScript, SQL, HTML, CSS",
+            items: "Python, Go, Java, JavaScript, TypeScript, C++, SQL, HTML, CSS",
+            availableItems: "Python, Go, Java, JavaScript, TypeScript, C++, SQL, HTML, CSS, Bash, C",
           },
           bulletPoints: [],
         },
@@ -484,8 +484,8 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Frameworks/Libraries",
-            items: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, JUnit, WebSocket",
-            availableItems: "React, React.js, Angular, Flask, FastAPI, Node.js, PyTorch, scikit-learn, SciPy, LangGraph, LangChain, Hugging Face Transformers, OpenAI Whisper, NumPy, Pandas, Svelte, React Native, Spring Boot, Spring WebFlux, Electron, Streamlit, Django, Flutter, Tailwind CSS, TensorFlow, JUnit, WebSocket",
+            items: "React.js, Angular, Flask, FastAPI, Node.js, Spring Boot, LangChain, LangGraph, PyTorch, Hugging Face Transformers, NumPy, Pandas, Tailwind CSS, WebSocket, JUnit, TensorFlow",
+            availableItems: "React.js, Angular, Flask, FastAPI, Node.js, Spring Boot, LangChain, LangGraph, PyTorch, Hugging Face Transformers, NumPy, Pandas, Tailwind CSS, WebSocket, JUnit, TensorFlow, React, scikit-learn, SciPy, OpenAI Whisper, Svelte, React Native, Spring WebFlux, Electron, Streamlit, Django, Flutter",
           },
           bulletPoints: [],
         },
@@ -496,8 +496,8 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Databases",
-            items: "MongoDB, Redis, PostgreSQL, ChromaDB, MySQL, Firebase, Firestore, Neo4j, Pinecone",
-            availableItems: "MongoDB, Redis, PostgreSQL, ChromaDB, MySQL, Firebase, Firestore, Neo4j, Pinecone",
+            items: "MongoDB, Redis, PostgreSQL, MySQL, Firebase, ChromaDB",
+            availableItems: "MongoDB, Redis, PostgreSQL, MySQL, Firebase, ChromaDB, Firestore, Neo4j, Pinecone",
           },
           bulletPoints: [],
         },
@@ -508,8 +508,8 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "DevOps/Tools",
-            items: "Docker, Kubernetes, AWS, Azure, GitHub Actions, GitLab CI, Grafana, SHAP, Tailwind, Git, Docker Compose, Kafka, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Linux, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ",
-            availableItems: "Docker, Kubernetes, AWS, Azure, GitHub Actions, GitLab CI, Grafana, SHAP, Tailwind, Git, Docker Compose, Kafka, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), GCP, Linux, Jenkins, SonarQube, Autosys, Android Studio, Cursor, Cline, AmazonQ",
+            items: "Docker, Kubernetes, Kafka, AWS, Azure, GitHub Actions, GitLab CI, Git, Linux, Grafana, GCP, Cursor, Cline, AmazonQ",
+            availableItems: "Docker, Kubernetes, Kafka, AWS, Azure, GitHub Actions, GitLab CI, Git, Linux, Grafana, GCP, Cursor, Cline, AmazonQ, SHAP, Tailwind, Docker Compose, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), Jenkins, SonarQube, Autosys, Android Studio",
           },
           bulletPoints: [],
         },
