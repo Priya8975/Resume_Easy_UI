@@ -508,7 +508,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "DevOps/Tools",
-            items: "Docker, Kubernetes, Kafka, AWS, Azure, GitHub Actions, GitLab CI, Git, Grafana, GCP, Cursor, Cline, AmazonQ",
+            items: "Docker, Kubernetes, Kafka, AWS, Azure, GitHub Actions, Git, Grafana, GCP, Cursor, Cline, AmazonQ",
             availableItems: "Docker, Kubernetes, Kafka, AWS, Azure, GitHub Actions, GitLab CI, Git, Linux, Grafana, GCP, Cursor, Cline, AmazonQ, SHAP, Tailwind, Docker Compose, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), Jenkins, SonarQube, Autosys, Android Studio",
           },
           bulletPoints: [],
