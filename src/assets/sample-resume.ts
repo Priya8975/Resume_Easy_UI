@@ -484,7 +484,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Frameworks/Libraries",
-            items: "React.js, Angular, Flask, FastAPI, Node.js, Spring Boot, LangChain, LangGraph, PyTorch, Hugging Face Transformers, NumPy, Pandas, Tailwind CSS, WebSocket, JUnit, TensorFlow",
+            items: "React.js, Angular, Flask, FastAPI, Node.js, Spring Boot, LangChain, LangGraph, PyTorch, NumPy, Pandas",
             availableItems: "React.js, Angular, Flask, FastAPI, Node.js, Spring Boot, LangChain, LangGraph, PyTorch, Hugging Face Transformers, NumPy, Pandas, Tailwind CSS, WebSocket, JUnit, TensorFlow, React, scikit-learn, SciPy, OpenAI Whisper, Svelte, React Native, Spring WebFlux, Electron, Streamlit, Django, Flutter",
           },
           bulletPoints: [],
