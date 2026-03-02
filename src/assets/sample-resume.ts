@@ -436,7 +436,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-6-bp-2",
-              text: "Established per-subscriber \\textbf{circuit breakers} and \\textbf{Redis} sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
+              text: "Implemented per-subscriber \\textbf{circuit breakers} and \\textbf{Redis} sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
               enabled: true,
               displayOrder: 1,
             },
