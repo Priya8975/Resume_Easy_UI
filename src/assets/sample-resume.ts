@@ -206,7 +206,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-3-bp-1",
-              text: "Engineered \\textbf{Flask} backend services and \\textbf{Angular} PWAs for a B2B rural commerce platform, serving 1M+ customers.",
+              text: "Delivered \\textbf{Flask} backend services and \\textbf{Angular} PWAs for a B2B rural commerce platform, serving 1M+ customers.",
               enabled: true,
               displayOrder: 0,
             },
@@ -436,7 +436,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-6-bp-2",
-              text: "Engineered per-subscriber \\textbf{circuit breakers} and \\textbf{Redis} sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
+              text: "Established per-subscriber \\textbf{circuit breakers} and \\textbf{Redis} sliding-window rate limiters using atomic Lua scripts with exponential backoff retries, delivering at-least-once guarantees to 1,000+ endpoints.",
               enabled: true,
               displayOrder: 1,
             },
@@ -468,13 +468,13 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "proj-7-bp-1",
-              text: "Designed and built a distributed event-driven \\textbf{Spring Boot} microservices platform with a 3-broker \\textbf{Kafka} cluster, delivering multi-channel alerts to 3,400+ recipients in under 2 seconds.",
+              text: "Architected a distributed event-driven \\textbf{Spring Boot} microservices platform with a 3-broker \\textbf{Kafka} cluster, delivering multi-channel alerts to 3,400+ recipients in under 2 seconds.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "proj-7-bp-2",
-              text: "Engineered a \\textbf{Redis} SETNX deduplication pipeline with geo-radius enrichment and \\textbf{GraphQL} subscriptions, reducing duplicate alerts by 100\\% with 5-minute TTL windows.",
+              text: "Streamlined a \\textbf{Redis} SETNX deduplication pipeline with geo-radius enrichment and \\textbf{GraphQL} subscriptions, reducing duplicate alerts by 100\\% with 5-minute TTL windows.",
               enabled: true,
               displayOrder: 1,
             },
