@@ -155,7 +155,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-2-bp-6",
-              text: "Implemented \\textbf{circuit breakers} and fallback handlers across NVD and OSV, maintaining 99.9\\% scan service availability.",
+              text: "Enforced \\textbf{circuit breakers} and fallback handlers across NVD and OSV, maintaining 99.9\\% scan service availability.",
               enabled: true,
               displayOrder: 5,
             },
@@ -206,7 +206,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-3-bp-1",
-              text: "Delivered \\textbf{Flask} backend services and \\textbf{Angular} PWAs for a B2B rural commerce platform, serving 1M+ customers.",
+              text: "Built \\textbf{Flask} backend services and \\textbf{Angular} PWAs for a B2B rural commerce platform, serving 1M+ customers.",
               enabled: true,
               displayOrder: 0,
             },
@@ -474,7 +474,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-7-bp-2",
-              text: "Streamlined a \\textbf{Redis} SETNX deduplication pipeline with geo-radius enrichment and \\textbf{GraphQL} subscriptions, reducing duplicate alerts by 100\\% with 5-minute TTL windows.",
+              text: "Engineered a \\textbf{Redis} SETNX deduplication pipeline with geo-radius enrichment and \\textbf{GraphQL} subscriptions, reducing duplicate alerts by 100\\% with 5-minute TTL windows.",
               enabled: true,
               displayOrder: 1,
             },
