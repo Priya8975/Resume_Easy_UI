@@ -149,7 +149,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-2-bp-5",
-              text: "Engineered \\textbf{CI/CD} plugins for GitHub Actions and GitLab CI with quality gates, branch protection and inline PR annotations, reducing production failures by 60\\%.",
+              text: "Integrated \\textbf{CI/CD} plugins for GitHub Actions and GitLab CI with quality gates, branch protection and inline PR annotations, reducing production failures by 60\\%.",
               enabled: true,
               displayOrder: 4,
             },
