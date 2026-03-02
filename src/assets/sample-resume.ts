@@ -516,7 +516,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "Frameworks/Libraries",
-            items: "React.js, Node.js, Flask, FastAPI, Angular, Spring Boot, LangChain, LangGraph, PyTorch, NumPy, Pandas, Tailwind CSS",
+            items: "React.js, Node.js, Flask, FastAPI, Angular, Spring Boot, LangChain, LangGraph, PyTorch, NumPy, Pandas, Tailwind CSS, GraphQL",
             availableItems: "React.js, Angular, Flask, FastAPI, Node.js, Spring Boot, LangChain, LangGraph, PyTorch, Hugging Face Transformers, NumPy, Pandas, Tailwind CSS, WebSocket, JUnit, TensorFlow, React, scikit-learn, SciPy, OpenAI Whisper, Svelte, React Native, Spring WebFlux, Electron, Streamlit, Django, Flutter, GraphQL, Micrometer",
           },
           bulletPoints: [],
@@ -540,7 +540,7 @@ export const sampleResume: ResumeData = {
           data: {
             type: "skills",
             category: "DevOps/Tools",
-            items: "Docker, Kubernetes, AWS, Azure, GCP, Kafka, GitHub Actions, Git, Linux, Cursor, AmazonQ",
+            items: "Docker, Kubernetes, AWS, Azure, GCP, Kafka, GitHub Actions, Git, Linux, Prometheus, Cursor, AmazonQ",
             availableItems: "Docker, Kubernetes, Kafka, AWS, Azure, GitHub Actions, GitLab CI, Git, Linux, Grafana, GCP, Cursor, Cline, AmazonQ, SHAP, Tailwind, Docker Compose, Spark, Hadoop, AWS (S3, EC2, EKS, CloudWatch), Azure (Data Factory, Data Lake Storage, Databricks), Jenkins, SonarQube, Autosys, Android Studio, Prometheus",
           },
           bulletPoints: [],
