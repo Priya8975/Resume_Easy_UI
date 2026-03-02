@@ -137,7 +137,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-2-bp-3",
-              text: "Architected a \\textbf{Kafka} scan pipeline for parallel security, quality and dependency scans to process \\textbf{5M+} scan events/day.",
+              text: "Implemented a \\textbf{Kafka} scan pipeline for parallel security, quality and dependency scans to process \\textbf{5M+} scan events/day.",
               enabled: true,
               displayOrder: 2,
             },
