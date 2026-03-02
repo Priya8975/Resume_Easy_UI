@@ -243,7 +243,7 @@ export const sampleResume: ResumeData = {
       entries: [
         {
           id: "proj-4",
-          enabled: true,
+          enabled: false,
           displayOrder: 1,
           data: {
             type: "projects",
@@ -443,7 +443,7 @@ export const sampleResume: ResumeData = {
             {
               id: "proj-6-bp-3",
               text: "Developed a \\textbf{React + WebSocket} real-time monitoring dashboard with live delivery metrics, validated by 26 tests using Go's race detector in a \\textbf{GitHub Actions CI} pipeline.",
-              enabled: true,
+              enabled: false,
               displayOrder: 2,
             },
             {
@@ -456,7 +456,7 @@ export const sampleResume: ResumeData = {
         },
         {
           id: "proj-7",
-          enabled: false,
+          enabled: true,
           displayOrder: 6,
           data: {
             type: "projects",
