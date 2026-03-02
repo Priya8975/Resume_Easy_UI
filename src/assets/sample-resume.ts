@@ -463,6 +463,7 @@ export const sampleResume: ResumeData = {
             name: "Campus Emergency Alert System",
             shortName: "CampusAlert",
             techStack: "Java, Spring Boot, Kafka, GraphQL, React, TypeScript, PostgreSQL, Redis, Docker",
+            url: "https://github.com/Priya8975/campus-safety-alert-system",
           },
           bulletPoints: [
             {
@@ -479,7 +480,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "proj-7-bp-3",
-              text: "Containerized 12 services via \\textbf{Docker Compose} with \\textbf{Prometheus} and \\textbf{Grafana} observability, validated by 29 unit tests in a \\textbf{GitHub Actions} CI/CD pipeline.",
+              text: "Deployed \\textbf{Prometheus} and \\textbf{Grafana} observability with 6 Micrometer metrics, cutting incident detection time by 40\\%.",
               enabled: true,
               displayOrder: 2,
             },
