@@ -218,7 +218,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-3-bp-3",
-              text: "Built a \\textbf{Recommendation Engine} using correlation analysis and clustering, increasing product discovery by 30\\%.",
+              text: "Designed a \\textbf{Recommendation Engine} using correlation analysis and clustering, increasing product discovery by 30\\%.",
               enabled: true,
               displayOrder: 2,
             },
