@@ -199,8 +199,8 @@ export const sampleResume: ResumeData = {
             type: "experience",
             company: "S3 IT Service",
             title: "Software Engineer",
-            startDate: "May 2022",
-            endDate: "July 2022",
+            startDate: "July 2022",
+            endDate: "July 2023",
             location: "Pune, India",
           },
           bulletPoints: [
