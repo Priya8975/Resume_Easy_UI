@@ -34,7 +34,7 @@ export const sampleResume: ResumeData = {
             degree: "Master of Science",
             field: "Computer Engineering",
             startDate: "Aug 2024",
-            endDate: "May 2026",
+            endDate: "Dec 2026",
             gpa: "3.9/4.0",
             location: "New York",
             availableCoursework: "Distributed Systems, Machine Learning, Computer Vision, Natural Language Processing, Deep Learning, NLP, Networking Algorithms, Digital Image Processing, Switching and Routing in Parallel Systems, Cyber Physical Systems",
