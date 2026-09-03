@@ -98,7 +98,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-1-bp-1",
-              text: "Architected an \\textbf{LLM}-driven design automation system coupling \\textbf{Claude 3 Opus} with multi-objective \\textbf{Bayesian optimization} to autonomously generate circuit topologies, achieving 97\\% efficiency and cutting a multi-month design cycle to hours.",
+              text: "Architected an \\textbf{LLM}-driven design automation system coupling Claude and GPT with Multi-Objective Bayesian Optimization to autonomously generate circuit topologies, achieving 97\\% efficiency and cutting a multi-month design cycle to hours.",
               enabled: true,
               displayOrder: 0,
             },
