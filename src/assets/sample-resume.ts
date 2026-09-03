@@ -98,15 +98,21 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-1-bp-1",
-              text: "Engineered a \\textbf{PyTorch} and \\textbf{SciPy} data pipeline to synthesize 1,000+ samples, cutting data preparation time by 60\\%.",
+              text: "Architected an \\textbf{LLM}-driven design automation system coupling \\textbf{Claude 3 Opus} with multi-objective \\textbf{Bayesian optimization} to autonomously generate circuit topologies, achieving 97\\% efficiency and cutting a multi-month design cycle to hours.",
               enabled: true,
               displayOrder: 0,
             },
             {
               id: "exp-1-bp-2",
-              text: "Developed a \\textbf{PyTorch} ML model for circuit behavior prediction, reducing estimation error from 23\\% to 5.19\\%.",
+              text: "Analyzed 4,000-trial optimization logs across efficiency, ripple, error and device stress metrics with \\textbf{pandas} and \\textbf{NumPy}, building interpretable summaries that steered model behavior.",
               enabled: true,
               displayOrder: 1,
+            },
+            {
+              id: "exp-1-bp-3",
+              text: "Published ``Automated Design of Hybrid Switched-Capacitor Converters Via Bayesian-Optimized LLM Prompting'' at \\textbf{IEEE MWSCAS 2026} as co-first author.",
+              enabled: true,
+              displayOrder: 2,
             },
           ],
         },
