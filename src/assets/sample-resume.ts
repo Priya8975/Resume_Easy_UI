@@ -98,7 +98,7 @@ export const sampleResume: ResumeData = {
           bulletPoints: [
             {
               id: "exp-1-bp-1",
-              text: "Architected an \\textbf{LLM}-driven design automation system coupling Claude and GPT with Multi-Objective Bayesian Optimization to autonomously generate circuit topologies, achieving 97\\% efficiency and cutting a multi-month design cycle to hours.",
+              text: "Architected an \\textbf{LLM}-driven design automation system coupling \\textbf{Claude} and \\textbf{GPT} with Multi-Objective Bayesian Optimization to generate circuit topologies, achieving 97\\% efficiency and cutting a multi-month design cycle to hours.",
               enabled: true,
               displayOrder: 0,
             },
@@ -110,7 +110,7 @@ export const sampleResume: ResumeData = {
             },
             {
               id: "exp-1-bp-3",
-              text: "Published ``Automated Design of Hybrid Switched-Capacitor Converters Via Bayesian-Optimized LLM Prompting'' at \\textbf{IEEE MWSCAS 2026} as co-first author.",
+              text: "Published ``Automated Design of Hybrid Switched-Capacitor Converters Via Bayesian-Optimized LLM Prompting'' at IEEE MWSCAS 2026 as co-first author.",
               enabled: true,
               displayOrder: 2,
             },
